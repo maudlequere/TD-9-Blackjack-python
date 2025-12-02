@@ -35,8 +35,8 @@ def get_value_cards(liste_cartes):
     lst_ace =[]
 
     for e in liste_cartes:
-        valeur_chiffre=['2 ♥','2 ♦','2 ♣','2 ♠','3 ♥','3 ♦','3 ♣','3 ♠','4 ♥','4 ♦','4 ♣','4 ♠','5 ♥','5 ♦','5 ♣','5 ♠','6 ♥','6 ♦','6 ♣','6 ♠','7 ♥','7 ♦','7 ♣','7 ♠','8 ♥','8 ♦','8 ♣','8 ♠','9 ♥','9 ♦','9 ♣','9 ♠','10 ♥','10 ♦','10 ♣','10 ♠']
-        valeur_tete=['Valet ♥','Valet ♦','Valet ♣','Valet ♠','Dame ♥','Dame ♦','Dame ♣','Dame ♠','Roi ♥','Roi ♦','Roi ♣','Roi ♠']
+        valeur_chiffre=['2 ♥','2 ♦','2 ♣','2 ♠','3 ♥','3 ♦','3 ♣','3 ♠','4 ♥','4 ♦','4 ♣','4 ♠','5 ♥','5 ♦','5 ♣','5 ♠','6 ♥','6 ♦','6 ♣','6 ♠','7 ♥','7 ♦','7 ♣','7 ♠','8 ♥','8 ♦','8 ♣','8 ♠','9 ♥','9 ♦','9 ♣','9 ♠','10 ♥']
+        valeur_tete=['Valet ♥','Valet ♦','Valet ♣','Valet ♠','Dame ♥','Dame ♦','Dame ♣','Dame ♠','Roi ♥','Roi ♦','Roi ♣','Roi ♠','10 ♦','10 ♣','10 ♠']
 
         if e in valeur_chiffre:
             somme = somme + int(e[0])
