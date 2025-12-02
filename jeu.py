@@ -169,7 +169,7 @@ while dollars_restant >= 20 and jouer.lower()=="oui" :
     elif winner_player == True  and value_dealer != value_player:
         print("Vous avez gagné ! \n")
         print(f"Vous aviez {dollars_restant}$.Votre mise était de {mise[1]}$. \n" )
-        dollars_restant = dollars_restant + mise[1]*2
+        dollars_restant = dollars_restant + mise[1]
 
     elif value_dealer == value_player:
         print("Egalité")
