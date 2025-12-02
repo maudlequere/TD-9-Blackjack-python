@@ -161,19 +161,19 @@ while dollars_restant >= 20 and jouer.lower()=="oui" :
 
     # Remise en jeu possible ?
     
-    if winner_player == False :
+    if winner_player == False and value_dealer != value_player:
         print("Vous avez perdu ! \n")
         print(f"Vous aviez {dollars_restant}$ .Votre mise était de {mise[1]}$. \n" )
         dollars_restant = dollars_restant - mise[1]
 
-    elif winner_player == True:
+    elif winner_player == True  and value_dealer != value_player:
         print("Vous avez gagné ! \n")
         print(f"Vous aviez {dollars_restant}$.Votre mise était de {mise[1]}$. \n" )
         dollars_restant = dollars_restant + mise[1]*2
 
     elif value_dealer == value_player:
         print("Egalité")
-        dollars_restant = dollars_restant + mise[1]
+        dollars_restant = dollars_restant
 
     print(f"Alors la somme qu'il vous reste est de {dollars_restant}$ \n" )
 
