@@ -9,7 +9,7 @@ quit_game=False
 #fonction init_cards => 52 cartes mélangées
 
 def init_cards():
-    lst_cards = ['As ♥','As ♦','As ♣','As ♠','2 ♥','2 ♦','2 ♣','2 ♠','3 ♥','3 ♦','3 ♣','3 ♠','4 ♥','4 ♦','4 ♣','4 ♠','5 ♥','5 ♦','5 ♣','5 ♠','6 ♥','6 ♦','6 ♣','6 ♠','7 ♥','7 ♦','7 ♣','7 ♠','8 ♥','8 ♦','8 ♣','8 ♠','9 ♥','9 ♦','9 ♣','9 ♠','Valet ♥','Valet ♦','Valet ♣','Valet ♠','Dame ♥','Dame ♦','Dame ♣','Dame ♠','Roi ♥','Roi ♦','Roi ♣','Roi ♠']
+    lst_cards = ['As ♥','As ♦','As ♣','As ♠','2 ♥','2 ♦','2 ♣','2 ♠','3 ♥','3 ♦','3 ♣','3 ♠','4 ♥','4 ♦','4 ♣','4 ♠','5 ♥','5 ♦','5 ♣','5 ♠','6 ♥','6 ♦','6 ♣','6 ♠','7 ♥','7 ♦','7 ♣','7 ♠','8 ♥','8 ♦','8 ♣','8 ♠','9 ♥','9 ♦','9 ♣','9 ♠','10 ♥','10 ♦','10 ♣','10 ♠','Valet ♥','Valet ♦','Valet ♣','Valet ♠','Dame ♥','Dame ♦','Dame ♣','Dame ♠','Roi ♥','Roi ♦','Roi ♣','Roi ♠']
     random.shuffle(lst_cards)
     return lst_cards
 
@@ -35,14 +35,14 @@ def get_value_cards(liste_cartes):
     lst_ace =[]
 
     for e in liste_cartes:
-        valeur_chiffre=['2 ♥','2 ♦','2 ♣','2 ♠','3 ♥','3 ♦','3 ♣','3 ♠','4 ♥','4 ♦','4 ♣','4 ♠','5 ♥','5 ♦','5 ♣','5 ♠','6 ♥','6 ♦','6 ♣','6 ♠','7 ♥','7 ♦','7 ♣','7 ♠','8 ♥','8 ♦','8 ♣','8 ♠','9 ♥','9 ♦','9 ♣','9 ♠']
+        valeur_chiffre=['2 ♥','2 ♦','2 ♣','2 ♠','3 ♥','3 ♦','3 ♣','3 ♠','4 ♥','4 ♦','4 ♣','4 ♠','5 ♥','5 ♦','5 ♣','5 ♠','6 ♥','6 ♦','6 ♣','6 ♠','7 ♥','7 ♦','7 ♣','7 ♠','8 ♥','8 ♦','8 ♣','8 ♠','9 ♥','9 ♦','9 ♣','9 ♠','10 ♥','10 ♦','10 ♣','10 ♠']
         valeur_tete=['Valet ♥','Valet ♦','Valet ♣','Valet ♠','Dame ♥','Dame ♦','Dame ♣','Dame ♠','Roi ♥','Roi ♦','Roi ♣','Roi ♠']
 
         if e in valeur_chiffre:
             somme = somme + int(e[0])
         
         elif e in valeur_tete:
-            somme = somme + 10
+            somme = somme + 10  
         
         else :
             lst_ace.append(e)
